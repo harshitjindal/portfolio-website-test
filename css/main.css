@@ -91,6 +91,32 @@
           transform: rotate(-45deg) translate(3px, -7px);
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  width: 50vw;
+  left: 0;
+  height: 50px;
+  opacity: 0.98;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
 body {
   background: #272727;
   color: #fff;

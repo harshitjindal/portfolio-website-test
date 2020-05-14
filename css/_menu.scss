@@ -53,3 +53,19 @@
 		}
 	}
 }
+
+.nav {
+	position: fixed;
+	top: 0;
+	width: 50vw;
+	left: 0;
+	height: 50px;
+	opacity: 0.98;
+	display: flex;
+	flex-direction: row;
+
+	.menu-nav {
+		display: flex;
+		flex-flow: row;
+	}
+}
