@@ -57,15 +57,30 @@
 .nav {
 	position: fixed;
 	top: 0;
-	width: 50vw;
 	left: 0;
-	height: 50px;
+	width: 100vw;
 	opacity: 0.98;
-	display: flex;
-	flex-direction: row;
+	visibility: hidden;
+
+	&.open {
+		visibility: visible;
+	}
 
 	.menu-nav {
+		list-style-type: none;
 		display: flex;
-		flex-flow: row;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-items: center;
+		height: 100vh;
+		overflow: hidden;
+		background: $primary-color;
+		padding-right: 1rem;
+		transform: translateY(-100%);
+		@include transition-ease;
+
+		&.open {
+			transform: translateY(0);
+		}
 	}
 }
